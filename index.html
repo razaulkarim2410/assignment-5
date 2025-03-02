@@ -11,11 +11,11 @@
 
 </head>
 
-<body>
-  <section class="container min-h-screen mx-auto py-6 bg-gray-300">
+<body class="container min-h-screen mx-auto py-6 bg-gray-300">
+  <section >
 
     <header>
-      <div class="px-14">
+      <div class="px-14" counter-container>
         <nav class="flex justify-between px-5 bg-white rounded-xl border py-4">
           <div class="flex items-center gap-2 ">
             <img src="assets/logo.png" alt="">
@@ -24,29 +24,33 @@
           <div class="flex items-center gap-8">
             <div class="flex items-center gap-2 bg-slate-100 p-2 rounded-lg">
               <img src="assets/checkbox.png" alt="">
-              <p>23</p>
+              <p id="first-num">23</p>
             </div>
-            <button><img src="assets/theme-btn.png" alt=""></button>
+            <button id="different-color" ><img src="assets/theme-btn.png" alt=""></button>
           </div>
         </nav>
+        <!-- ondblclick="makeGreen()" onclick="makeRed()" -->
       </div>
     </header>
     <section class="container px-14 py-10 mx-auto ">
-      <div class="flex ">
+      <div class="flex counter-container">
         <div class="grid  lg:col-span-3 items-center bg-white rounded-xl">
          <div class="flex justify-between bg-white rounded-lg p-5 ">
           <div class="flex gap-5 p-4 bg-slate-200 rounded-lg">
             <div><img class="" src="assets/checkbox.png" alt=""></div>
             <div>
               <p>Task Assigned</p>
-              <p>05</p>
+              <p id="second-num">6</p>
             </div>
           </div>
           <div class="">
-            <div class="flex gap-3 items-center btn">
+            
+            
+            <!-- <div  class="flex gap-3 items-center ">
               <img class="" src="assets/board.png" alt="">
               <p>Discover Something <br> New Today!</p>
-            </div>
+            </div> -->
+            
           </div>
           
             <div class="flex gap-5 p-4 bg-slate-200 rounded-lg">
@@ -57,7 +61,7 @@
               </div>
             </div>
          </div>
-         <div class="grid grid-cols-3 gap-3 pt-10 ">
+         <div class="grid grid-cols-3 gap-3 pt-10 button-container">
           <div class="card-1  bg-gray-300 rounded-xl p-5 m-4">
             <h4 class="pb-4">ShopEase</h4>
             <h3 class="text-xl font-semibold pb-5">Fix Mobile Button Issue </h3>
@@ -65,7 +69,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button id="main-btn" class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           <div class="card-2  bg-gray-300 rounded-xl p-5 m-4">
@@ -75,7 +79,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           <div class="card-3  bg-gray-300 rounded-xl p-5 m-4">
@@ -85,7 +89,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           <div class="card-4  bg-gray-300 rounded-xl p-5 m-4 ">
@@ -95,7 +99,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           <div class="card-5  bg-gray-300 rounded-xl p-5 m-4 ">
@@ -105,7 +109,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           <div class="card-6  bg-gray-300 rounded-xl p-5 m-4 ">
@@ -115,7 +119,7 @@
             <div class="flex justify-between pt-8">
               
               <p>Deadline <br> 21 March 2025</p>
-              <button class="btn bg-blue-700 text-white">Completed</button>
+              <button  class="btn main-button bg-blue-700 text-white">Completed</button>
             </div>
           </div>
           
@@ -135,7 +139,8 @@
             <h3>Activity Log</h3>
             </div>
             <div>
-              <button class="btn">Clear History</button>
+              <button id="clear" class="btn bg-blue-800 text-white">Clear History</button>
+              <p  id="message"></p>
             </div>
           </div>
         </div>

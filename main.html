@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloges</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="container min-h-screen mx-auto py-6 bg-gray-300">
+  <section>
+    <nav class="px-14">
+      <div class="flex justify-between px-5 bg-white rounded-xl border py-4">
+        <div class="flex items-center">
+          <img src="assets/logo.png" alt="">
+          <h2>Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <div class="btn bg-blue-700 text-white"><button>Back to Desk</button></div>
+      </div>
+    </nav>
+
+    <h1 class="py-5 font-semibold text-2xl text-center">Blogs</h1>
+    <div class="px-14 ">
+      <div class="px-5 bg-white rounded-xl py-2 ">
+        <p>Question-1: What are the different ways to select an element in the DOM?</p>
+        <br>
+        <p class="">নির্দিষ্ট ID দ্বারা একক এলিমেন্ট নির্বাচন করে।</p>
+        <p>নির্দিষ্ট class দ্বারা একাধিক এলিমেন্ট নির্বাচন করে।</p>
+        <p>নির্দিষ্ট ট্যাগ নাম দ্বারা এলিমেন্ট নির্বাচন করে।</p>
+      </div>
+      <div class="px-5 bg-white rounded-xl py-2 my-3">
+        <p>Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+        <br>
+        <p>HTML সহ সম্পূর্ণ কন্টেন্ট নেয় এবং সেট করতে পারে</p>
+        <p> শুধুমাত্র দৃশ্যমান (visible) টেক্সট নেয়, তবে HTML ট্যাগ উপেক্ষা করে।</p>
+        <p> সমস্ত টেক্সট নেয়,তবে HTML উপেক্ষা করে।</p>
+      </div>
+      <div class="px-5 bg-white rounded-xl py-2">
+        <p>Question-3: What is event delegation in the DOM?</p>
+        <br>
+        <p>Event Delegation হল এমন একটি টেকনিক যেখানে parent এলিমেন্টে ইভেন্ট লিস্টেনার যোগ করা হয়, যাতে child এলিমেন্টগুলোর ইভেন্ট স্বয়ংক্রিয়ভাবে হ্যান্ডেল করা যায়।</p>
+      </div>
+      <div class="px-5 bg-white rounded-xl py-2 my-3">
+        <p>Question-4: What is event bubbling in the DOM?</p>
+        <br>
+        <p>Event Bubbling হল এমন একটি প্রসেস যেখানে একটি চাইল্ড এলিমেন্টে ইভেন্ট ঘটলে, সেই ইভেন্ট parent এবং উপরে থাকা ancestor এলিমেন্ট পর্যন্ত পৌঁছে যায়।
+        </p>
+      </div>
+      <div class="px-5 bg-white rounded-xl py-2">
+        <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
+        <br>
+        <p>createElement() দিয়ে এলিমেন্ট তৈরি করা হয়, appendChild() ও append() দিয়ে যোগ করা হয়, এবং remove() দিয়ে মুছে ফেলা হয়।</p>
+      </div>
+    </div>
+
+  </section>
+  
+</body>
+</html>
