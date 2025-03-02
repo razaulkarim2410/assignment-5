@@ -48,3 +48,11 @@ document.getElementById("clear").addEventListener("click", function() {
   document.getElementById("message").innerText = "";
 });
 
+function openhtml(){
+  window.location.href = "main.html";
+}
+
+function gohtml(){
+  window.location.href = "index.html";
+
+}
